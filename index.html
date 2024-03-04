@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Quiz App</h1>
+            <p>Test your <strong>C# Knowledge Fundamentals</strong></p>
+            <hr>
+        </header>
+        <section>
+            
+            <form name="quizForm" onsubmit="return submitAnswers()">
+                <h3>1. What is the correct syntax for declaring a variable in C#?</h3>
+                <input name="q1" type="radio" id="q1a" value="a">a. var myVariable = 10;<br>
+                <input name="q1" type="radio" id="q1b" value="b">b. int myVariable = 10;<br>
+                <input name="q1" type="radio" id="q1c" value="c">c. myVariable = 10;<br>
+                <input name="q1" type="radio" id="q1d" value="d">d. variable myVariable = 10;<br>
+                
+                <h3>2. Which keyword is used to define a class in C#?</h3>
+                <input name="q2" type="radio" id="q2a" value="a">a. function<br>
+                <input name="q2" type="radio" id="q2b" value="b">b. struct<br>
+                <input name="q2" type="radio" id="q2c" value="c">c. class<br>
+                <input name="q2" type="radio" id="q2d" value="d">d. object<br>
+                
+                <h3>3. What does the "using" directive in C# do?</h3>
+                <input name="q3" type="radio" id="q3a" value="a">a. Declares a new namespace<br>
+                <input name="q3" type="radio" id="q3b" value="b">b. Imports types from another assembly<br>
+                <input name="q3" type="radio" id="q3c" value="c">c. Declares a new class<br>
+                <input name="q3" type="radio" id="q3d" value="d">d. Releases resources when they are no longer needed<br>
+                
+                <h3>4. Which of the following statements is used to terminate the execution of a loop in C#?</h3>
+                <input name="q4" type="radio" id="q4a" value="a">a. end<br>
+                <input name="q4" type="radio" id="q4b" value="b">b. break<br>
+                <input name="q4" type="radio" id="q4c" value="c">c. exit<br>
+                <input name="q4" type="radio" id="q4d" value="d">d. stop<br>
+                
+                <h3>5. What is the purpose of the "static" keyword in C#?</h3>
+                <input name="q5" type="radio" id="q5a" value="a">a. It indicates that a variable can be modified outside its class<br>
+                <input name="q5" type="radio" id="q5b" value="b">b. It allows access to members without instantiating an object of its class<br>
+                <input name="q5" type="radio" id="q5c" value="c">c. It indicates that a class cannot be instantiated<br>
+                <input name="q5" type="radio" id="q5d" value="d">d. It specifies that a method can only be called once<br>
+                
+                <br>
+                <input name="submit" type="submit" value="Submit">
+            </form>
+            <div id="results"></div>
+        </section>
+        <footer>
+            <p>Copyright &copy; 2024, All rights reserved</p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
